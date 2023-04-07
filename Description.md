@@ -38,7 +38,7 @@
   diverso1_NUMERO_RIGHE diverso2_NUMERO_RIGHE sono due file differenti <br />
   diverso1_NUMERO_RIGHE uguale1_NUMERO_RIGHE sono due file uguali <br />
   vuoto1 vuoto2 sono due file vuoti TUTTI I FILE HANNO ESTENSIONE .txt <br />
-##Funzionamento programma 
+## Funzionamento programma 
   Il programma dichiara diverse variabili necessarie per l’esecuzione del programma, dopo di che richiama la 
   funzione controlloOpzioni(), che in caso di problemi con le opzioni termina il programma. 
   Attraverso la funzione strcpy() salvo i nomi dei due file passati come input in argv[1] e argv[2] nelle variabili 
@@ -72,7 +72,7 @@
   In caso una riga sia terminale e in un file non sia terminale, anche se la stringa leggibile dall’utente è uguale, 
   le righe saranno differenti poiché una conterrà uno ‘\n’ finale e questo le fa considerare due righe 
   differenti. 
-  Come utilizzare il programma
+## Come utilizzare il programma
   Il programma prende in input il nome dei due file separati da spazio, dopo di che sempre separate da spazio 
   prende in input le opzioni scelte tra [ g, s, d, u, v, o ], considerando le varie mutue esclusione imposte. 
   Anche le varie opzioni dovranno avere tra di loro uno spazio.
@@ -80,30 +80,30 @@
   sarà utilizzato per reindirizzare l’output. I file che si vogliono utilizzare come parametri di input su cui 
   eseguire il programma si dovranno trovare all’interno della cartella in cui si sta eseguendo il processo 
   relativo al programma.
-  Il programma calcola il diff tra la riga i-esima del file F1 e la riga i-esima del file F2, restituendo un output che dipende dalle opzioni passate da riga di comando, e che sono
-  ●	-g: se F1 ed F2 sono diversi in almeno una riga restituisce la stringa ”F1 ed F2 sono differenti”. Al posto di F1 ed F2 vanno restituiti i nomi dei file elaborati
-  ●	-s: se F1 ed F2 sono uguali in tutte le righe restituisce la stringa “F1 ed F2 sono uguali”. Al posto di F1 ed F2 vanno restituiti i nomi dei file elaborati
-  ●	-d: restituisce I numeri delle righe differenti
-  ●	-u: restituisce I numeri delle righe uguali
-  ●	-v: combinato con –d o –u stampa le righe che differiscono o che sono uguali. Il formato di output deve essere:
-                #Riga, FILENAME F1: <riga di F1 che differisce o che e’ uguale>
-                #Riga, FILENAME F2: <riga di F2 che differisce o che e’ uguale>
-  ●	-o NOME_FILE_OUTPUT: ridireziona l’output su di un file di testo. 
+  Il programma calcola il diff tra la riga i-esima del file F1 e la riga i-esima del file F2, restituendo un output che dipende dalle opzioni passate da riga di comando. Le opzioni disponibili sono: <br />
+  ●	-g: se F1 ed F2 sono diversi in almeno una riga restituisce la stringa ”F1 ed F2 sono differenti”. Al posto di F1 ed F2 vanno restituiti i nomi dei file elaborati <br />
+  ●	-s: se F1 ed F2 sono uguali in tutte le righe restituisce la stringa “F1 ed F2 sono uguali”. Al posto di F1 ed F2 vanno restituiti i nomi dei file elaborati <br />
+  ●	-d: restituisce I numeri delle righe differenti<br />
+  ●	-u: restituisce I numeri delle righe uguali<br />
+  ●	-v: combinato con –d o –u stampa le righe che differiscono o che sono uguali. Il formato di output deve essere:<br />
+                #Riga, FILENAME F1: <riga di F1 che differisce o che e’ uguale><br />
+                #Riga, FILENAME F2: <riga di F2 che differisce o che e’ uguale><br />
+  ●	-o NOME_FILE_OUTPUT: ridireziona l’output su di un file di testo. <br />
 
 ## Prove effettuate
   Il programma è stato testato con tutti i file indicati sopra nella sezione “File di test disponibili”, sarebbero 
   troppe le possibili combinazioni provate, per questo nello spazio sottostante si indicano alcuni semplici test 
   del programma.
-  • Eseguendo il programma con parametri diverso1_10.txt diverso2_10.txt -u -v avremo come output:
-  2, diverso1_10.txt: 2
-  2, diverso2_10.txt: diversa
-  4, diverso1_10.txt: diversa
-  4, diverso2_10.txt: 4
-  5, diverso1_10.txt: diversa
-  5, diverso2_10.txt: 5
-  7, diverso1_10.txt: diversa
-  7, diverso2_10.txt: 7
-  • Eseguendo il programma con parametri diverso1_10.txt e vuoto1.txt -u -v avremo come output:
-  Il file vuoto1.txt vuoto -> I DUE FILE SONO DIFFERENTI
-  • Eseguendo il programma con parametri diverso1_10.txt diverso2_210.txt -g avremo come output:
-  diverso1_10.txt ed diverso2_210.txt sono diversi
+  • Eseguendo il programma con parametri diverso1_10.txt diverso2_10.txt -u -v avremo come output:<br />
+  2, diverso1_10.txt: 2<br />
+  2, diverso2_10.txt: diversa<br />
+  4, diverso1_10.txt: diversa<br />
+  4, diverso2_10.txt: 4<br />
+  5, diverso1_10.txt: diversa<br />
+  5, diverso2_10.txt: 5<br />
+  7, diverso1_10.txt: diversa<br />
+  7, diverso2_10.txt: 7<br />
+  • Eseguendo il programma con parametri diverso1_10.txt e vuoto1.txt -u -v avremo come output:<br />
+  Il file vuoto1.txt vuoto -> I DUE FILE SONO DIFFERENTI<br />
+  • Eseguendo il programma con parametri diverso1_10.txt diverso2_210.txt -g avremo come output:<br />
+  diverso1_10.txt ed diverso2_210.txt sono diversi<br />
