@@ -9,10 +9,10 @@
   • string.h : per sfruttare funzioni come strcmp(), strcpy() e strlen()<br />
   
 ## Costanti utilizzate
-  • DIM_BLOCCO con valore 50 che rappresenta la dimensione di un singolo blocco da 50 righe;
-  • MAX_LINEE con valore 200 che rappresenta il numero massimo di caratteri che può essere scritto 
+  • DIM_BLOCCO con valore 50 che rappresenta la dimensione di un singolo blocco da 50 righe;<br />
+  • MAX_LINEE con valore 200 che rappresenta il numero massimo di caratteri che può essere scritto <br />
   su una riga;
-  • MAX_LEN_NAME_FILE con valore 50 che rappresenta la lunghezza massima consentita per il nome 
+  • MAX_LEN_NAME_FILE con valore 50 che rappresenta la lunghezza massima consentita per il nome <br />
   dei due file passati come input al programma 
 ## Funzioni dichiarate
   • controlloOpzioni(int , char*[] , bool[]): rappresenta la funzione utilizzata per leggere le opzioni 
@@ -24,9 +24,9 @@
   effettua la permutazione e richiede che le opzioni si trovino come primo elemento;
   La funzione controlla se sono state passate delle opzioni, in caso negativo restituisce un messaggio 
   di errore e termina l’esecuzione. Controlla anche se sono state passate delle opzioni mutuamente 
-  esclusive come d ed u e gestisce il caso in cui v sia stata passata da solo senza u oppure d;
+  esclusive come d ed u e gestisce il caso in cui v sia stata passata da solo senza u oppure d;<br />
   • gestione_stampe_gs(char [], char [], bool [], bool ): rappresenta la funzione usata per gestire le 
-  stampe relative alle opzioni g ed s;
+  stampe relative alle opzioni g ed s;<br />
   • gestione_stampe_du(char [], char [] , char [], char [], int ): rappresenta la funzione usata per gestire 
   le stampe relative alle opzioni d ed u combinate con l’opzione v
  
@@ -34,10 +34,10 @@
   Per le variabili dichiarate nel dettaglio e la loro utilità nel programma consultare i commenti nel
   codice allegato dell’homework.
 ## File di test disponibili
-  NUMERO_RIGHE = righe nel file [10, 50, 80,100,210]
-  diverso1_NUMERO_RIGHE diverso2_NUMERO_RIGHE sono due file differenti 
-  diverso1_NUMERO_RIGHE uguale1_NUMERO_RIGHE sono due file uguali 
-  vuoto1 vuoto2 sono due file vuoti TUTTI I FILE HANNO ESTENSIONE .txt 
+  NUMERO_RIGHE = righe nel file [10, 50, 80,100,210]<br />
+  diverso1_NUMERO_RIGHE diverso2_NUMERO_RIGHE sono due file differenti <br />
+  diverso1_NUMERO_RIGHE uguale1_NUMERO_RIGHE sono due file uguali <br />
+  vuoto1 vuoto2 sono due file vuoti TUTTI I FILE HANNO ESTENSIONE .txt <br />
 ##Funzionamento programma 
   Il programma dichiara diverse variabili necessarie per l’esecuzione del programma, dopo di che richiama la 
   funzione controlloOpzioni(), che in caso di problemi con le opzioni termina il programma. 
