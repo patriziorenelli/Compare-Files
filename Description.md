@@ -2,11 +2,11 @@
   Il problema richiedeva l’analisi in blocchi di 50 righe di 2 file, i cui nomi vengono passati come input al 
   programma insieme alcune opzioni.
 ## Librerie utilizzate
-  • stdio.h : utilizzata per gestione input/output; < br/>
-  • stdbool.h : per implementare le variabili booleane usate, si sarebbe potuto evitare ed usare un int;< br/>
-  • unistd.h : per sfruttare la funzione getopt();< br/>
-  • stdlib.h : per EXIT_FAILURE e EXIT_SUCCESS;< br/>
-  • string.h : per sfruttare funzioni come strcmp(), strcpy() e strlen()< br/>
+  • stdio.h : utilizzata per gestione input/output; <br />
+  • stdbool.h : per implementare le variabili booleane usate, si sarebbe potuto evitare ed usare un int;<br />
+  • unistd.h : per sfruttare la funzione getopt();<br />
+  • stdlib.h : per EXIT_FAILURE e EXIT_SUCCESS;<br />
+  • string.h : per sfruttare funzioni come strcmp(), strcpy() e strlen()<br />
   
 ## Costanti utilizzate
   • DIM_BLOCCO con valore 50 che rappresenta la dimensione di un singolo blocco da 50 righe;
